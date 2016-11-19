@@ -5,10 +5,12 @@ c = ["1a208c", "351f7b", "421e73", "501e6b", "5e1d63", "791d53", "871c4a", "941c
 */
 var width = 1325,
     height = 580;
-var formatNumber = d3.format(",d");
+
 var projection = d3.geo.albersUsa()
     .scale(4200)
     .translate([width / 2 + 1200, height / 2 - 700]);
+
+var formatNumber = d3.format(",d");
     
 var path = d3.geo.path()
     .projection(projection);
